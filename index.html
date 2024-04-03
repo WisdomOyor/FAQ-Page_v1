@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frequently Asked Questions</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <p>FAQ System for PAR™</p>
+      <h1>Frequently Asked Questions</h1>
+
+      <!-- Links to FAQ sections -->
+      <ul class="faq-links">
+        <li><a href="#password">Forgotten password</a></li>
+        <li><a href="#proposal">Submit a proposal</a></li>
+        <li><a href="#contact">Who do I contact and how?</a></li>
+      </ul>
+
+      <div class="faq">
+        <button class="accordion">
+          What is PAR?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias perspiciatis aliquam debitis illum aliquid sapiente sint recusandae, cum unde illo accusantium, dignissimos architecto doloribus. Eos facere quasi explicabo ex. Modi.</p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          How do I get an appraisal?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis saepe molestiae distinctio asperiores cupiditate consequuntur dolor ullam, iure eligendi harum eaque hic corporis debitis porro consectetur voluptate rem officiis architecto.</p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button id="contact" class="accordion">
+          Who do I contact and how?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis saepe molestiae distinctio asperiores cupiditate consequuntur dolor ullam, iure eligendi harum eaque hic corporis debitis porro consectetur voluptate rem officiis architecto.</p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button id="password" class="accordion">
+          What do I do if I've forgotten my password
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis saepe molestiae distinctio asperiores cupiditate consequuntur dolor ullam, iure eligendi harum eaque hic corporis debitis porro consectetur voluptate rem officiis architecto.</p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button id="proposal" class="accordion">
+          How do I submit a proposal?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis saepe molestiae distinctio asperiores cupiditate consequuntur dolor ullam, iure eligendi harum eaque hic corporis debitis porro consectetur voluptate rem officiis architecto.</p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          How does PAR work?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis saepe molestiae distinctio asperiores cupiditate consequuntur dolor ullam, iure eligendi harum eaque hic corporis debitis porro consectetur voluptate rem officiis architecto.</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          this.parentElement.classList.toggle("active");
+
+          var pannel = this.nextElementSibling;
+
+          if (pannel.style.display === "block") {
+            pannel.style.display = "none";
+          } else {
+            pannel.style.display = "block";
+          }
+        });
+      }
+
+      // Function to highlight accordion button
+      function highlightAccordionButton(button) {
+        button.classList.add("highlight"); // Add highlight class
+        setTimeout(function () {
+          button.classList.remove("highlight"); // Remove highlight class after 3 seconds
+        }, 3000);
+      }
+
+      // Function to trigger accordion when links are clicked
+      var faqLinks = document.querySelectorAll(".faq-links a");
+      for (var j = 0; j < faqLinks.length; j++) {
+        faqLinks[j].addEventListener("click", function (event) {
+          event.preventDefault(); // Prevent default link behavior
+          var targetId = this.getAttribute("href").substring(1); // Get target ID
+          var targetAccordion = document.getElementById(targetId); // Get corresponding accordion button
+          if (targetAccordion) {
+            highlightAccordionButton(targetAccordion); // Highlight accordion button
+            window.location.href = event.target.href; // Navigate to the link URL after highlighting
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
