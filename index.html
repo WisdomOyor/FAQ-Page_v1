@@ -7,36 +7,141 @@
     <title>Frequently Asked Questions</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="assets/IITA-logo-01.svg" />
   </head>
   <body>
     <div class="wrapper">
-      <p>FAQ System for PAR™</p>
+      <div class="flex">
+        <div class="logo mr-1"><img src="assets/IITA-logo.gif" alt="" /></div>
+        <p>FAQ System for PAR™</p>
+      </div>
       <h1>Frequently Asked Questions</h1>
+
+      <!-- Search Bar -->
+      <input type="text" id="searchInput" placeholder="Type in a keyword, e.g workplan..." />
 
       <!-- Links to FAQ sections -->
       <ul class="faq-links">
         <li><a href="#password">Forgotten password</a></li>
-        <li><a href="#proposal">Submit a proposal</a></li>
+        <li><a href="#proposal">Submit a Proposal</a></li>
         <li><a href="#contact">Who do I contact and how?</a></li>
+        <li><a href="#create-workplan">How exactly do I create a workplan?</a></li>
       </ul>
 
       <div class="faq">
-        <button class="accordion">
-          What is PAR?
+        <button class="accordion" id="submit-workplan">
+          How do I update and submit my Workplan?
           <i class="fa-solid fa-chevron-down"></i>
         </button>
         <div class="pannel">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias perspiciatis aliquam debitis illum aliquid sapiente sint recusandae, cum unde illo accusantium, dignissimos architecto doloribus. Eos facere quasi explicabo ex. Modi.</p>
+          <p>1. On your dashboard, click on <strong>NRS Workplan</strong></p>
+          <img src="assets/img-01-01.svg" alt="Dashboard Image" />
+
+          <p>2. Click the appropriate year: e.g <strong>2024</strong></p>
+          <img src="assets/img-01-02.svg" alt="Pick a year" />
+
+          <p>3. Click on the link <strong>add new records to your Workplan 2024</strong></p>
+          <img src="assets/img-01-03.svg" alt="Add new records to workplan" />
+
+          <p>4. Enter the workplan objective, and click <strong>update</strong></p>
+          <img src="assets/img-01-04.svg" alt="Update Objective" />
+
+          <p>5. Click on the <strong>Details</strong> button on the Workplan</p>
+          <img src="assets/img-01-05.svg" alt="Details Button Image" />
+
+          <p>6. Click the button <strong>Add Kpi..</strong></p>
+          <img src="assets/img-01-06.svg" alt="Add KPI Button Image" />
+
+          <p>7. Fill the form</p>
+          <img src="assets/img-01-07.svg" alt="Fill Form" />
+
+          <p>8. Click <strong>Update</strong></p>
+          <img src="assets/img-01-08.svg" alt="Update Form" />
+
+          <p>9. Click <strong>Submit</strong></p>
+          <img src="assets/img-01-09.svg" alt="Update Form" />
         </div>
       </div>
 
       <div class="faq">
         <button class="accordion">
-          How do I get an appraisal?
+          How do I approve my appraisee's Workplan?
           <i class="fa-solid fa-chevron-down"></i>
         </button>
         <div class="pannel">
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis saepe molestiae distinctio asperiores cupiditate consequuntur dolor ullam, iure eligendi harum eaque hic corporis debitis porro consectetur voluptate rem officiis architecto.</p>
+          <p>1. On your dashboard, click on <strong>Supervise</strong>.</p>
+          <img src="assets/img-02-01.svg" alt="Update Form" />
+
+          <p>2. <strong>Switch to</strong> the profile of the appraisee, for example, Charles Mwizerwa.</p>
+          <img src="assets/img-02-02.svg" alt="Update Form" />
+
+          <p>3. Click on the <strong>NRS Workplan</strong> link on your appraisee's dashboard.</p>
+          <img src="assets/img-02-03.svg" alt="Update Form" />
+
+          <p>4. Click on the <strong>Approve</strong> button.</p>
+          <p>5. Click on <strong>Return to yourself</strong>.</p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button id="create-workplan" class="accordion">
+          What is an R4D Workplan and how do I create one?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <ol>
+            <li>
+              <strong>Definition:</strong>
+              <ul>
+                <li>An R4D Workplan is a plan for a specific year within the PAR system.</li>
+                <li>It consists of one or more workplan entries and additional text detailing planned activities.</li>
+                <li>Information entered here is used to generate the annual Workplan PDF document.</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Workplan Entry Details:</strong>
+              <ul>
+                <li>Each workplan entry captures details of a single output target. Details include:</li>
+                <ul class="left-padding-1rem">
+                  <li>Output target description.</li>
+                  <li>Actual outcome.</li>
+                  <li>Intended user.</li>
+                  <li>Participating and beneficiary countries.</li>
+                  <li>Entry year, activity year, and output target year.</li>
+                  <li>MTP Program linkage (if applicable).</li>
+                  <li>Output target type (e.g., Practice, Materials, Policy strategies).</li>
+                  <li>Outcome and impact.</li>
+                </ul>
+              </ul>
+            </li>
+            <li>
+              <strong>More explanation:</strong>
+              <ul>
+                <li>Allows for further explanation of planned activities.</li>
+                <li>Includes categories like quality of science, communication efforts, and resource mobilization.</li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button id="password" class="accordion">
+          What do I do if I've forgotten my password?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis saepe molestiae distinctio asperiores cupiditate consequuntur dolor ullam, iure eligendi harum eaque hic corporis debitis porro consectetur voluptate rem officiis architecto. Password answer.</p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button id="proposal" class="accordion">
+          How do I submit a proposal?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis redo saepe molestiae distinctio asperiores cupiditate consequuntur dolor ullam, iure eligendi harum eaque hic corporis debitis porro consectetur voluptate rem officiis architecto.</p>
         </div>
       </div>
 
@@ -49,37 +154,29 @@
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis saepe molestiae distinctio asperiores cupiditate consequuntur dolor ullam, iure eligendi harum eaque hic corporis debitis porro consectetur voluptate rem officiis architecto.</p>
         </div>
       </div>
-
-      <div class="faq">
-        <button id="password" class="accordion">
-          What do I do if I've forgotten my password
-          <i class="fa-solid fa-chevron-down"></i>
-        </button>
-        <div class="pannel">
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis saepe molestiae distinctio asperiores cupiditate consequuntur dolor ullam, iure eligendi harum eaque hic corporis debitis porro consectetur voluptate rem officiis architecto.</p>
-        </div>
-      </div>
-
-      <div class="faq">
-        <button id="proposal" class="accordion">
-          How do I submit a proposal?
-          <i class="fa-solid fa-chevron-down"></i>
-        </button>
-        <div class="pannel">
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis saepe molestiae distinctio asperiores cupiditate consequuntur dolor ullam, iure eligendi harum eaque hic corporis debitis porro consectetur voluptate rem officiis architecto.</p>
-        </div>
-      </div>
-
-      <div class="faq">
-        <button class="accordion">
-          How does PAR work?
-          <i class="fa-solid fa-chevron-down"></i>
-        </button>
-        <div class="pannel">
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis saepe molestiae distinctio asperiores cupiditate consequuntur dolor ullam, iure eligendi harum eaque hic corporis debitis porro consectetur voluptate rem officiis architecto.</p>
-        </div>
-      </div>
     </div>
+
+    <div id="noResultsMessage" class="none">
+      <i class="fa-regular fa-face-frown"></i>
+      <p>Nothing here. Please type something else, or contact us directly.</p>
+    </div>
+
+    <footer class="flex">
+      <div class="footer-top-div flex">
+        <div class="logo mr-5"><img src="assets/IITA-logo.gif" alt="" /></div>
+        <div class="footer-links">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="mailto:par.support@gmail.com">Send us an email</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class=""><hr class="style-one" /></div>
+      <div class="">&copy;PAR. All rights reserved.</div>
+    </footer>
+
+    <!-- How the link would look -->
+    <!-- <a href="faq.html" target="_blank">Link Text</a> -->
 
     <script>
       var acc = document.getElementsByClassName("accordion");
@@ -92,13 +189,56 @@
 
           var pannel = this.nextElementSibling;
 
+          // Close all other open accordions
+          var openAccordions = document.querySelectorAll(".accordion.active");
+          for (var j = 0; j < openAccordions.length; j++) {
+            if (openAccordions[j] !== this) {
+              openAccordions[j].classList.remove("active");
+              openAccordions[j].parentElement.classList.remove("active");
+              openAccordions[j].nextElementSibling.style.display = "none";
+            }
+          }
+
           if (pannel.style.display === "block") {
             pannel.style.display = "none";
           } else {
             pannel.style.display = "block";
+            // Scroll to clicked accordion with a little offset above
+            var offset = -50; // Adjust this value to set the desired offset
+            setTimeout(() => {
+              var targetOffsetTop = this.offsetTop + offset;
+              window.scrollTo({ top: targetOffsetTop, behavior: "smooth" });
+            }, 100); // 100 milliseconds delay
           }
         });
       }
+
+      // Function to close all open accordions
+      function closeAllAccordions() {
+        var openAccordions = document.querySelectorAll(".accordion.active");
+        for (var j = 0; j < openAccordions.length; j++) {
+          openAccordions[j].classList.remove("active");
+          openAccordions[j].parentElement.classList.remove("active");
+          openAccordions[j].nextElementSibling.style.display = "none";
+        }
+      }
+
+      // Function to close open accordions when clicking outside the wrapper
+      document.body.addEventListener("click", function (event) {
+        var wrapper = document.querySelector(".wrapper");
+        var openAccordion = wrapper.querySelector(".accordion.active");
+
+        if (openAccordion && !wrapper.contains(event.target)) {
+          openAccordion.classList.remove("active");
+          openAccordion.parentElement.classList.remove("active");
+          openAccordion.nextElementSibling.style.display = "none";
+
+          // Scroll to the top of the closed accordion
+          var offset = -50; // Adjust this value to set the desired offset
+          var targetOffsetTop = openAccordion.offsetTop + offset;
+          window.scrollTo({ top: targetOffsetTop, behavior: "smooth" });
+        }
+      });
 
       // Function to highlight accordion button
       function highlightAccordionButton(button) {
@@ -108,11 +248,12 @@
         }, 3000);
       }
 
-      // Function to trigger accordion when links are clicked
+      // Function to trigger accordion highlight when a top link is clicked
       var faqLinks = document.querySelectorAll(".faq-links a");
       for (var j = 0; j < faqLinks.length; j++) {
         faqLinks[j].addEventListener("click", function (event) {
           event.preventDefault(); // Prevent default link behavior
+          closeAllAccordions(); // Close all open accordions
           var targetId = this.getAttribute("href").substring(1); // Get target ID
           var targetAccordion = document.getElementById(targetId); // Get corresponding accordion button
           if (targetAccordion) {
@@ -121,6 +262,45 @@
           }
         });
       }
+
+      // ** Search Functionality **
+      // Get the input element
+      var searchInput = document.getElementById("searchInput");
+
+      // Add event listener for input changes
+      searchInput.addEventListener("input", function () {
+        var searchTerm = this.value.toLowerCase(); // Get the search term and convert to lowercase
+
+        // Loop through all accordion panels
+        var faqDivs = document.querySelectorAll(".faq");
+        var anyResults = false;
+        var noResultsMessage = document.getElementById("noResultsMessage");
+
+        faqDivs.forEach(function (faqDiv) {
+          var button = faqDiv.querySelector(".accordion");
+          var buttonContent = button.textContent.toLowerCase(); // Get the text content of the accordion button and convert to lowercase
+
+          var panel = faqDiv.querySelector(".pannel");
+          var panelText = panel.textContent.toLowerCase(); // Get the text content of the panel and convert to lowercase
+
+          // Check if the panel text contains the search term
+          if (buttonContent.includes(searchTerm) || panelText.includes(searchTerm)) {
+            faqDiv.style.display = "block"; // Show the faq div if it contains matching content
+            anyResults = true;
+          } else {
+            faqDiv.style.display = "none"; // Hide the faq div if it doesn't contain matching content
+          }
+        });
+
+        // Show or hide the no results message based on search results
+        if (anyResults) {
+          noResultsMessage.classList.remove("nothing-here"); // Remove the class if there are results
+          noResultsMessage.classList.add("none"); // Add the class if there are no results
+        } else {
+          noResultsMessage.classList.remove("none"); // Remove the class if there are results
+          noResultsMessage.classList.add("nothing-here"); // Add the class if there are no results
+        }
+      });
     </script>
   </body>
 </html>
