@@ -18,19 +18,58 @@
       <h1>Frequently Asked Questions</h1>
 
       <!-- Search Bar -->
-      <input type="text" id="searchInput" placeholder="Type in a keyword, e.g workplan..." />
+      <input type="text" id="searchInput" placeholder="Type in a keyword, e.g workplan" />
 
-      <!-- Links to FAQ sections -->
-      <ul class="faq-links">
-        <li><a href="#password">Forgotten password</a></li>
-        <li><a href="#proposal">Submit a Proposal</a></li>
-        <li><a href="#contact">Who do I contact and how?</a></li>
-        <li><a href="#create-workplan">How exactly do I create a workplan?</a></li>
-      </ul>
+      <!-- Additional filtering options -->
+      <div id="filterOptions">
+        <div class="filter-groups filter-group-1">
+          <div class="filter-option" data-category="APPRAISEE">
+            <p>Are you an APPRAISEE?</p>
+            <div class="checkboxes">
+              <label><input type="checkbox" value="Yes" /> Yes</label>
+            </div>
+          </div>
+          <div class="filter-option" data-category="APPRAISER">
+            <p>Are you an APPRAISER?</p>
+            <div class="checkboxes">
+              <label><input type="checkbox" value="Yes" /> Yes</label>
+            </div>
+          </div>
+        </div>
+        <div class="filter-groups filter-group-2">
+          <div class="filter-option" data-category="NRS/IRS">
+            <p>Are you an NRS/IRS Professional?</p>
+            <div class="checkboxes">
+              <label><input type="checkbox" value="Yes" /> Yes</label>
+            </div>
+          </div>
+          <div class="filter-option" data-category="R4D/P4D">
+            <p>Are you an R4D/P4D/Services Professional?</p>
+            <div class="checkboxes">
+              <label><input type="checkbox" value="Yes" /> Yes</label>
+            </div>
+          </div>
+        </div>
+        <div class="filter-groups filter-group-3">
+          <div class="filter-option" data-category="NRS/IRS">
+            <p>Are you managing NRS/IRS Professionals' Appraisals?</p>
+            <div class="checkboxes">
+              <label><input type="checkbox" value="Yes" /> Yes</label>
+            </div>
+          </div>
+          <div class="filter-option" data-category="R4D/P4D">
+            <p>Are you managing R4D/P4D/Services Appraisals?</p>
+            <div class="checkboxes">
+              <label><input type="checkbox" value="Yes" /> Yes</label>
+            </div>
+          </div>
+        </div>
+        <!-- Add more filter options groups here as needed -->
+      </div>
 
-      <div class="faq">
+      <div class="faq" data-category="APPRAISEE NRS/IRS">
         <button class="accordion">
-          How do I get my Workplan appraised?
+          I need a step-by-step guide on all I need to do as an APPRAISEE (NRS/IRS)
           <i class="fa-solid fa-chevron-down"></i>
         </button>
         <div class="pannel">
@@ -38,8 +77,8 @@
             <li><strong>Login</strong> to your account</li>
             <li>Check your links to make sure they are complete. It should look similar to this:</li>
             <img src="assets/img-04-01.svg" alt="Screenshot of complete Workplan links" />
-            <br /><p> If they're not, refer to the question "<strong>What do I do if my NRS/IRS Workplan links aren't complete?</strong
-            >"</p>
+            <br />
+            <p>If they're not, refer to the question "<strong>What do I do if my NRS/IRS Workplan links aren't complete?</strong>"</p>
             <br /><br />
 
             <li>
@@ -65,9 +104,9 @@
         </div>
       </div>
 
-      <div class="faq">
+      <div class="faq" data-category="APPRAISER NRS/IRS">
         <button class="accordion">
-          I need a step-by-step guide on all I need to do as an Appraiser
+          I need a step-by-step guide on all I need to do as an APPRAISER (NRS/IRS)
           <i class="fa-solid fa-chevron-down"></i>
         </button>
         <div class="pannel">
@@ -75,42 +114,116 @@
           <ol>
             <li>On your dashboard, click on <strong>Supervise</strong>.</li>
             <img src="assets/img-02-01.svg" alt="Screenshot of dashboard with 'Supervise' button" />
-        
+
             <li><strong>Switch to</strong> the profile of the appraisee, for example, Adeola Bolatito.</li>
             <img src="assets/img-02-02.svg" alt="Screenshot of profile switch" />
-        
+
             <li>Click on the <strong>NRS Workplan</strong> link on your appraisee's dashboard.</li>
             <img src="assets/img-02-03.svg" alt="Screenshot of NRS Workplan link" />
-        
+
             <li>Click on the <strong>Approve</strong> button.</li>
             <img src="assets/img-02-04.svg" alt="Screenshot of Approve button" />
-        
+
             <li>Click on <strong>Return to yourself</strong>.</li>
             <img src="assets/img-02-05.svg" alt="Screenshot of 'Return to yourself' button" />
-        
+
             <li>Find the link to manage your appraisals, e.g Manage ...</li>
-            <img src="assets/img-05-01.svg" alt="Screenshot of link to manage appraisals">
-        
+            <img src="assets/img-05-01.svg" alt="Screenshot of link to manage appraisals" />
+
             <li>Click on the link via which you can access the Workplan</li>
-            <img src="assets/img-05-02.svg" alt="Screenshot of link to access Workplan">
-        
+            <img src="assets/img-05-02.svg" alt="Screenshot of link to access Workplan" />
+
             <li>Click the <strong>Edit appraisal</strong>, and fill the form appropriately</li>
-            <img src="assets/img-05-03.svg" alt="Screenshot of 'Edit appraisal' button">
-        
+            <img src="assets/img-05-03.svg" alt="Screenshot of 'Edit appraisal' button" />
+
             <li>Click on Preview and Finalize only after you have completed all these processes</li>
             <p>Ensure that the appraisee adds their comment.</p>
             <p>Make sure that all the Workplan statuses say YES</p>
-            <img src="assets/img-05-04.svg" alt="Screenshot of Workplan statuses">
-        
+            <img src="assets/img-05-04.svg" alt="Screenshot of Workplan statuses" />
+
             <li>Review all that needs to be reviewed, and then click Submit Final Score</li>
-            <img src="assets/img-05-05.svg" alt="Screenshot of 'Submit Final Score' button">
+            <img src="assets/img-05-05.svg" alt="Screenshot of 'Submit Final Score' button" />
           </ol>
         </div>
       </div>
 
-      <div class="faq">
+      <div class="faq" data-category="APPRAISEE R4D/P4D">
         <button class="accordion">
-          How do I import my Workplan?
+          I need a step-by-step guide on all I need to do as an APPRAISEE (R4D/P4D/Services)
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>As an Appraisee (R4D/P4D/Services), you have a few tasks to complete. Here's a step-by-step guide:</p>
+          <ol>
+            <li>
+              First, as a non-new staff, you need to add your Achievements:
+              <ul>
+                <li>Click on <strong>Achievement</strong> on your Dashboard.</li>
+                <li>Pick the appropriate year.</li>
+                <li>Click the appropriate link as shown below. E.g Add achievement to "[Workplan Activity]"</li>
+                <img src="assets/img-06-01.svg" alt="Screenshot of 'New Achievement' button" />
+                <li>Type in your Achievement.</li>
+                <li>State the Completion(%).</li>
+                <li>Click <strong>Update</strong>.</li>
+                <img src="assets/img-06-02.svg" alt="Screenshot of 'Update' button for Achievement" />
+              </ul>
+            </li>
+
+            <li>
+              Next, submit your Workplan:
+              <ul>
+                <li>Click the appropriate link to access your workplans, e.g. <strong>R4D Workplans</strong>.</li>
+                <li>Pick the appropriate year.</li>
+                <li>Click on <strong>add new records to your Workplan [year]</strong>.</li>
+                <img src="assets/img-06-05.svg" alt="Screenshot of 'Add new records to Workplan' button" />
+                <li>Select the appropriate Performance Criteria.</li>
+                <li>Type in your Performance Criteria Description.</li>
+                <li>Update the Activity Year and Output target/products/deliverables/research outputs/milestones Year appropriately.</li>
+                <li>Click <strong>Update</strong>.</li>
+                <img src="assets/img-06-06.svg" alt="Screenshot of 'Update' button for Workplan" />
+                <li>Click the appropriate link to your workplan.</li>
+                <img src="assets/img-06-07.svg" alt="Screenshot of 'Update' button for Workplan" />
+                <li>Click <strong>Add activity</strong>.</li>
+                <img src="assets/img-06-08.svg" alt="Screenshot of 'Update' button for Workplan" />
+                <li>Fill the form appropraitely and click <strong>Update</strong>.</li>
+                <img src="assets/img-06-09.svg" alt="Screenshot of 'Update' button for Workplan" />
+                <img src="assets/img-06-10.svg" alt="Screenshot of 'Update' button for Workplan" />
+                <li>You can also <strong>edit</strong> your workplan.</li>
+                <img src="assets/img-06-11.svg" alt="Screenshot of 'Update' button for Workplan" />
+                <img src="assets/img-06-12.svg" alt="Screenshot of 'Update' button for Workplan" />
+              </ul>
+            </li>
+            <li>
+              Next, get Appraised:
+              <ul>
+                <li>Click <strong>My Appraisals</strong>.</li>
+                <li>Click the link to access your Appraisal.</li>
+                <img src="assets/img-06-03.svg" alt="Screenshot of 'My Appraisals' button" />
+                <li>Fill the form appropriately.</li>
+                <li>Add your Comments.</li>
+                <li>Indicate if you want to appeal or not.</li>
+                <li>Click <strong>Save Comment</strong>.</li>
+                <img src="assets/img-06-04.svg" alt="Screenshot of 'Save Comment' button" />
+              </ul>
+            </li>
+          </ol>
+          <p><strong>NB: </strong>If your total weights are not 100%, please refer to your supervisor to rectify that.</p>
+        </div>
+      </div>
+
+      <div class="faq" data-category="APPRAISER R4D/P4D">
+        <button id="appraisals" class="accordion">
+          I need a step-by-step guide on all I need to do as an APPRAISER (R4D/P4D/Services)
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>If you have any further questions, please feel free to send them to the following email address: [sample email]</p>
+        </div>
+      </div>
+
+      <div class="faq" data-category="APPRAISEE NRS/IRS">
+        <button class="accordion">
+          How do I import my Workplan? (NRS/IRS)
           <i class="fa-solid fa-chevron-down"></i>
         </button>
         <div class="pannel">
@@ -126,9 +239,9 @@
         </div>
       </div>
 
-      <div class="faq">
+      <div class="faq" data-category="APPRAISEE NRS/IRS">
         <button class="accordion" id="submit-workplan">
-          How do I update and submit my Workplan?
+          How do I update and submit my Workplan? (NRS/IRS)
           <i class="fa-solid fa-chevron-down"></i>
         </button>
         <div class="pannel">
@@ -162,9 +275,9 @@
         </div>
       </div>
 
-      <div class="faq">
+      <div class="faq" data-category="APPRAISER NRS/IRS">
         <button class="accordion">
-          How do I approve my appraisee's Workplan?
+          How do I approve my appraisee's Workplan? (NRS/IRS)
           <i class="fa-solid fa-chevron-down"></i>
         </button>
         <div class="pannel">
@@ -185,30 +298,22 @@
         </div>
       </div>
 
-      <div class="faq">
+      <div class="faq" data-category="APPRAISEE NRS/IRS">
         <button class="accordion">
           What do I do if my NRS/IRS Workplan links aren't complete?
           <i class="fa-solid fa-chevron-down"></i>
         </button>
         <div class="pannel">
-          <p>If you can't find your NRS/IRS Workplan links, please <a href="mailto:IITAIT-SoftwareHelpDesk@cgiar.org?subject=Workplan%20Link%20Issue&amp;body=Staff%20ID%3A%20%5BYour%20Staff%20ID%5D%0D%0AAppraiser%2FSupervisor%3A%20%5BName%20of%20Your%20Appraiser%2FSupervisor%5D%0D%0AUnit%20or%20Program%3A%20%5BName%20of%20Your%20Unit%20or%20Program%5D%0D%0ACountry%3A%20%5BYour%20Country%5D%0D%0AStaff%20Category%3A%20%5BYour%20Staff%20Category%5D">click here to send an email</a> providing the relevant information.</p>
-        </div>                            
-        <!-- <div class="pannel">
-          <p>If you can't find your NRS/IRS Workplan links, please provide the following information to your supervisor or administrator:</p>
-          <br />
-          <ul>
-            <li>Staff ID: [Your Staff ID]</li>
-            <li>Appraiser/Supervisor: [Name of Your Appraiser/Supervisor]</li>
-            <li>Unit or Program: [Name of Your Unit or Program]</li>
-            <li>Country: [Your Country]</li>
-            <li>Staff Category: [Your Staff Category]</li>
-          </ul>
-        </div> -->
+          <p>
+            If you can't find your NRS/IRS Workplan links, please <a href="mailto:IITAIT-SoftwareHelpDesk@cgiar.org?subject=Workplan%20Link%20Issue&amp;body=Staff%20ID%3A%20%5BYour%20Staff%20ID%5D%0D%0AAppraiser%2FSupervisor%3A%20%5BName%20of%20Your%20Appraiser%2FSupervisor%5D%0D%0AUnit%20or%20Program%3A%20%5BName%20of%20Your%20Unit%20or%20Program%5D%0D%0ACountry%3A%20%5BYour%20Country%5D%0D%0AStaff%20Category%3A%20%5BYour%20Staff%20Category%5D">click here to send an email</a> with the required details to resolve the issue. <br /><br />
+            When you click on that link, you'll be taken to your email application, pre-filled with the recipient's address. There, you are to provide the relevant information.
+          </p>
+        </div>
       </div>
 
-      <div class="faq">
+      <div class="faq" data-category="APPRAISEE NRS/IRS R4D/P4D">
         <button id="create-workplan" class="accordion">
-          What is an R4D Workplan and how do I create one?
+          What is a Workplan and how do I create one?
           <i class="fa-solid fa-chevron-down"></i>
         </button>
         <div class="pannel">
@@ -222,11 +327,14 @@
               </ul>
             </li>
             <li>
-              <strong>How to create yours: Workplan Entry Details</strong> <br>
+              <strong>How to create yours: Workplan Entry Details</strong> <br />
               <ul>
                 <li>Create a new Excel file with extension <strong>.xls</strong></li>
-                <p>Here is the Format you should follow:</p> Workplan Objective | KPI Text | KPI Activity | Milestone 1 | Milestone 2 | Milestone 3 | Milestone 4 <br>
-                <br><p>Your Workplan entries should capture details like:</p>
+                <p>Here is the Format you should follow:</p>
+                Workplan Objective | KPI Text | KPI Activity | Milestone 1 | Milestone 2 | Milestone 3 | Milestone 4
+                <br />
+                <br />
+                <p>Your Workplan entries should capture details like:</p>
                 <ul class="left-padding-1rem">
                   <li>Output target description.</li>
                   <li>Actual outcome.</li>
@@ -243,7 +351,7 @@
         </div>
       </div>
 
-      <div class="faq">
+      <div class="faq" data-category="APPRAISEE APPRAISER NRS/IRS R4D/P4D">
         <button id="appraisals" class="accordion">
           More questions???
           <i class="fa-solid fa-chevron-down"></i>
@@ -253,7 +361,7 @@
         </div>
       </div>
 
-      <div class="faq">
+      <div class="faq" data-category="APPRAISEE NRS/IRS">
         <button id="appraisals" class="accordion">
           Who is an NRS/IRS professional?
           <i class="fa-solid fa-chevron-down"></i>
@@ -263,7 +371,7 @@
         </div>
       </div>
 
-      <div class="faq">
+      <div class="faq" data-category="APPRAISEE APPRAISER NRS/IRS R4D/P4D">
         <button id="password" class="accordion">
           What do I do if I've forgotten my password?
           <i class="fa-solid fa-chevron-down"></i>
@@ -273,7 +381,7 @@
         </div>
       </div>
 
-      <div class="faq">
+      <div class="faq" data-category="APPRAISEE NRS/IRS R4D/P4D">
         <button id="proposal" class="accordion">
           How do I submit a proposal?
           <i class="fa-solid fa-chevron-down"></i>
@@ -283,7 +391,7 @@
         </div>
       </div>
 
-      <div class="faq">
+      <div class="faq" data-category="APPRAISEE NRS/IRS R4D/P4D">
         <button id="contact" class="accordion">
           Who do I contact for enquiries, and how?
           <i class="fa-solid fa-chevron-down"></i>
@@ -304,7 +412,7 @@
         <div class="logo mr-5"><img src="assets/IITA-logo.gif" alt="" /></div>
         <div class="footer-links">
           <ul>
-            <!-- How the link would look -->
+            <!-- How to make a link that opens in a new tab, when clicked -->
             <!-- <a href="faq.html" target="_blank">Link Text</a> -->
             <li><a href="#">Home</a></li>
             <li><a href="mailto:par.support@gmail.com">Send us an email</a></li>
@@ -316,6 +424,218 @@
     </footer>
 
     <script>
+      // Declare variables
+      var availableFAQs = Array.from(document.querySelectorAll(".faq"));
+      var checkedCategories = [];
+      var displayedFAQs = availableFAQs;
+      var filterGroup2Visible = false;
+      var filterGroup3Visible = false;
+
+      // Functionality for the checkboxes
+      document.addEventListener("DOMContentLoaded", function () {
+        // Get all checkboxes
+        var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        // Add event listener to each checkbox
+        checkboxes.forEach(function (checkbox) {
+          checkbox.addEventListener("change", function () {
+            // Verify if the checkbox is now checked
+            if (this.checked) {
+              var parentGroup = checkbox.closest(".filter-groups");
+              var otherCheckboxes = parentGroup.querySelectorAll('input[type="checkbox"]');
+              // Uncheck other checkboxes in the same group
+              otherCheckboxes.forEach(function (otherCheckbox) {
+                if (otherCheckbox !== checkbox && otherCheckbox.checked) {
+                  uncheckOtherBox(otherCheckbox);
+                }
+              });
+
+              addCategory(this);
+
+              filterGroup2Visible = false;
+              filterGroup3Visible = false;
+
+              // If checkbox is in filter-group-1, uncheck checkboxes in group 2 and 3
+              if (this.closest(".filter-group-1")) {
+                var filterGroup2Checkboxes = document.querySelectorAll('.filter-group-2 input[type="checkbox"]');
+                var filterGroup3Checkboxes = document.querySelectorAll('.filter-group-3 input[type="checkbox"]');
+                filterGroup2Checkboxes.forEach(function (checkbox) {
+                  uncheckOtherBox(checkbox);
+                });
+                filterGroup3Checkboxes.forEach(function (checkbox) {
+                  uncheckOtherBox(checkbox);
+                });
+              }
+
+              if (this.closest(".filter-group-1")) {
+                // Determine which category was selected
+                var category = this.closest(".filter-option").dataset.category;
+
+                // Set filter group visibility based on the selected category
+                if (category === "APPRAISEE") {
+                  filterGroup2Visible = true;
+                } else if (category === "APPRAISER") {
+                  filterGroup3Visible = true;
+                }
+                // Update the display of filter groups
+                updateFilterGroups();
+              }
+
+              updateFAQs();
+
+              // Filter availableFAQs to include only FAQs that are displayed (have display: block)
+              displayedFAQs = availableFAQs.filter(function (faq) {
+                return faq.style.display === "block";
+              });
+              // Call searchAccordionPanels with the search term and the displayed FAQs
+              searchAccordionPanels(document.getElementById("searchInput").value, displayedFAQs);
+            } else {
+              removeCategory(this.closest(".filter-option").dataset.category);
+
+              // If checkbox is in filter-group-1, uncheck checkboxes in group 2 and 3
+              if (this.closest(".filter-group-1")) {
+                var filterGroup2Checkboxes = document.querySelectorAll('.filter-group-2 input[type="checkbox"]');
+                var filterGroup3Checkboxes = document.querySelectorAll('.filter-group-3 input[type="checkbox"]');
+                filterGroup2Checkboxes.forEach(function (checkbox) {
+                  uncheckOtherBox(checkbox);
+                });
+                filterGroup3Checkboxes.forEach(function (checkbox) {
+                  uncheckOtherBox(checkbox);
+                });
+
+                filterGroup2Visible = false;
+                filterGroup3Visible = false;
+                updateFilterGroups();
+              }
+
+              updateFAQs();
+
+              // Filter availableFAQs to include only FAQs that are displayed (have display: block)
+              displayedFAQs = availableFAQs.filter(function (faq) {
+                return faq.style.display === "block";
+              });
+              // Call searchAccordionPanels with the search term and the displayed FAQs
+              searchAccordionPanels(document.getElementById("searchInput").value, displayedFAQs);
+            }
+          });
+        });
+      });
+
+      // Function to remove active class from filter groups
+      function removeActivegroup(groupSelector) {
+        var group = document.querySelector(groupSelector);
+        group.classList.remove("active");
+      }
+
+      // Function to add active class to filter groups
+      function addActivegroup(groupSelector) {
+        var group = document.querySelector(groupSelector);
+        group.classList.add("active");
+      }
+
+      // To uncheck boxes
+      function uncheckOtherBox(checkbox) {
+        checkbox.checked = false;
+        removeCategory(checkbox.closest(".filter-option").dataset.category);
+      }
+
+      // Function to add category to checkedCategories array
+      function addCategory(checkbox) {
+        var addedCategory = checkbox.closest(".filter-option").dataset.category;
+        if (!checkedCategories.includes(addedCategory)) {
+          checkedCategories.push(addedCategory);
+        }
+      }
+
+      // Function to remove category from checkedCategories array
+      function removeCategory(removedCategory) {
+        var index = checkedCategories.indexOf(removedCategory);
+        if (index !== -1) {
+          checkedCategories.splice(index, 1);
+        }
+      }
+
+      // Function to update the display of filter groups
+      function updateFilterGroups() {
+        var filterGroup2 = document.querySelector(".filter-group-2");
+        var filterGroup3 = document.querySelector(".filter-group-3");
+
+        if (filterGroup2Visible) {
+          filterGroup2.classList.add("active");
+        } else {
+          filterGroup2.classList.remove("active");
+        }
+
+        if (filterGroup3Visible) {
+          filterGroup3.classList.add("active");
+        } else {
+          filterGroup3.classList.remove("active");
+        }
+      }
+
+      // Function to update the display of FAQs based on checked categories
+      function updateFAQs() {
+        // Clear the search bar
+        document.getElementById("searchInput").value = "";
+
+        if (checkedCategories.length === 0) {
+          // If no categories are checked, display all FAQs
+          availableFAQs.forEach(function (faq) {
+            faq.style.display = "block";
+          });
+        } else {
+          availableFAQs.forEach(function (faq) {
+            var categories = faq.dataset.category.split(" ");
+            if (checkedCategories.every((category) => categories.includes(category))) {
+              faq.style.display = "block";
+            } else {
+              faq.style.display = "none";
+            }
+          });
+        }
+      }
+
+      // Search bar Function
+      function searchAccordionPanels(searchTerm, availableFAQs) {
+        searchTerm = searchTerm.toLowerCase();
+        var anyResults = false;
+        var noResultsMessage = document.getElementById("noResultsMessage");
+
+        availableFAQs.forEach(function (faq) {
+          var button = faq.querySelector(".accordion");
+          var buttonContent = button.textContent.toLowerCase();
+
+          var panel = faq.querySelector(".pannel");
+          var panelText = panel.textContent.toLowerCase();
+
+          if (buttonContent.includes(searchTerm) || panelText.includes(searchTerm)) {
+            faq.style.display = "block";
+            anyResults = true;
+          } else {
+            faq.style.display = "none";
+          }
+
+          // Show or hide the no results message based on search results
+          if (anyResults) {
+            noResultsMessage.classList.remove("nothing-here"); // Remove the class if there are results
+            noResultsMessage.classList.add("none"); // Add the class if there are no results
+          } else {
+            noResultsMessage.classList.remove("none"); // Remove the class if there are results
+            noResultsMessage.classList.add("nothing-here"); // Add the class if there are no results
+          }
+        });
+      }
+
+      // ** Search Functionality **
+      // Get the input element
+      var searchInput = document.getElementById("searchInput");
+
+      // Add event listener for input changes
+      searchInput.addEventListener("input", function () {
+        var searchTerm = this.value.toLowerCase(); // Get the search term and convert to lowercase
+        searchAccordionPanels(searchTerm, displayedFAQs);
+      });
+
+      // Functionality for handling accordion interactions (e.g., FAQs)
       var acc = document.getElementsByClassName("accordion");
       var i;
 
@@ -374,68 +694,6 @@
           var offset = -50; // Adjust this value to set the desired offset
           var targetOffsetTop = openAccordion.offsetTop + offset;
           window.scrollTo({ top: targetOffsetTop, behavior: "smooth" });
-        }
-      });
-
-      // Function to highlight accordion button
-      function highlightAccordionButton(button) {
-        button.classList.add("highlight"); // Add highlight class
-        setTimeout(function () {
-          button.classList.remove("highlight"); // Remove highlight class after 3 seconds
-        }, 3000);
-      }
-
-      // Function to trigger accordion highlight when a top link is clicked
-      var faqLinks = document.querySelectorAll(".faq-links a");
-      for (var j = 0; j < faqLinks.length; j++) {
-        faqLinks[j].addEventListener("click", function (event) {
-          event.preventDefault(); // Prevent default link behavior
-          closeAllAccordions(); // Close all open accordions
-          var targetId = this.getAttribute("href").substring(1); // Get target ID
-          var targetAccordion = document.getElementById(targetId); // Get corresponding accordion button
-          if (targetAccordion) {
-            highlightAccordionButton(targetAccordion); // Highlight accordion button
-            window.location.href = event.target.href; // Navigate to the link URL after highlighting
-          }
-        });
-      }
-
-      // ** Search Functionality **
-      // Get the input element
-      var searchInput = document.getElementById("searchInput");
-
-      // Add event listener for input changes
-      searchInput.addEventListener("input", function () {
-        var searchTerm = this.value.toLowerCase(); // Get the search term and convert to lowercase
-
-        // Loop through all accordion panels
-        var faqDivs = document.querySelectorAll(".faq");
-        var anyResults = false;
-        var noResultsMessage = document.getElementById("noResultsMessage");
-
-        faqDivs.forEach(function (faqDiv) {
-          var button = faqDiv.querySelector(".accordion");
-          var buttonContent = button.textContent.toLowerCase(); // Get the text content of the accordion button and convert to lowercase
-
-          var panel = faqDiv.querySelector(".pannel");
-          var panelText = panel.textContent.toLowerCase(); // Get the text content of the panel and convert to lowercase
-
-          // Check if the panel text contains the search term
-          if (buttonContent.includes(searchTerm) || panelText.includes(searchTerm)) {
-            faqDiv.style.display = "block"; // Show the faq div if it contains matching content
-            anyResults = true;
-          } else {
-            faqDiv.style.display = "none"; // Hide the faq div if it doesn't contain matching content
-          }
-        });
-
-        // Show or hide the no results message based on search results
-        if (anyResults) {
-          noResultsMessage.classList.remove("nothing-here"); // Remove the class if there are results
-          noResultsMessage.classList.add("none"); // Add the class if there are no results
-        } else {
-          noResultsMessage.classList.remove("none"); // Remove the class if there are results
-          noResultsMessage.classList.add("nothing-here"); // Add the class if there are no results
         }
       });
     </script>
