@@ -230,21 +230,21 @@ label {
   font-size: 1rem;
   line-height: 1.4;
 }
-.pannel ol > li:not(:last-child) {
-  padding-bottom: 1rem;
+.pannel ol > li:not(:first-child){
+  padding-top: 1rem;
 }
 .left-padding-1rem {
   padding-left: 1rem;
 }
 .pannel img {
   margin-top: 1rem;
-  max-width: 100%;
+  width: 100%;
 }
-@media (min-width: 960px) {
+/* @media (min-width: 960px) {
   .pannel img {
     max-width: 60%;
   }
-}
+} */
 
 .faq {
   border: 1px solid rgba(0, 0, 0, 0.2);
