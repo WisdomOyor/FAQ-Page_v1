@@ -1,7 +1,10 @@
 <svg width="642" height="254" viewBox="0 0 642 254" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <rect width="641.5" height="254" fill="url(#pattern0_304_95)"/>
 <rect x="114" y="59" width="70" height="2" rx="1" fill="#FF5D02"/>
+<rect x="92" y="109" width="29" height="2" rx="1" fill="#FF5D02"/>
 <path d="M246.921 197.792C246.806 197.252 246.275 196.907 245.735 197.022L236.932 198.893C236.392 199.008 236.047 199.539 236.161 200.079C236.276 200.619 236.807 200.964 237.348 200.849L245.173 199.186L246.836 207.011C246.951 207.551 247.482 207.896 248.022 207.781C248.562 207.667 248.907 207.136 248.792 206.595L246.921 197.792ZM217.839 243.113L246.782 198.545L245.104 197.455L216.161 242.024L217.839 243.113Z" fill="#FF5D02"/>
+<rect x="193" y="197" width="10" height="2" rx="1" fill="#FF5D02"/>
+<rect x="205" y="197" width="20" height="2" rx="1" fill="#FF5D02"/>
 <defs>
 <pattern id="pattern0_304_95" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0_304_95" transform="scale(0.000779423 0.0019685)"/>
